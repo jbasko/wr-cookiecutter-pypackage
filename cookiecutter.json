@@ -1,5 +1,5 @@
 {
-  "package_name": "rtw-package",
+  "package_name": "wr-package",
   "package_directory": "{{cookiecutter.package_name|lower|replace('-', '_')}}",
   "package_author": "Jazeps Basko",
   "package_email": "jazeps.basko@gmail.com",
