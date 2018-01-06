@@ -3,15 +3,15 @@
 set -e
 set -x
 
-pyenv_version_dir=~/.pyenv/versions/{{cookiecutter.package_name}}
+pyenv_version_dir=~/.pyenv/versions/{{cookiecutter.venv_name}}
 
 if [ ! -d "${pyenv_version_dir}" ]; then
-    echo "Creating pyenv virtualenv {{cookiecutter.package_name}}"
-    pyenv virtualenv 3.6.1 {{cookiecutter.package_name}}
+    echo "Creating pyenv virtualenv {{cookiecutter.venv_name}}"
+    pyenv virtualenv 3.6.1 {{cookiecutter.venv_name}}
 fi
 
 original_pyenv=$PYENV_VERSION
-export PYENV_VERSION={{cookiecutter.package_name}}
+export PYENV_VERSION={{cookiecutter.venv_name}}
 
 pwd
 $(pyenv which pip) install -r ./requirements.txt

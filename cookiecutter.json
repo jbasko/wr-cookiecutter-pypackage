@@ -3,6 +3,7 @@
   "package_directory": "{{cookiecutter.package_name|lower|replace('-', '_')}}",
   "package_author": "Jazeps Basko",
   "package_email": "jazeps.basko@gmail.com",
+  "venv_name": "{{cookiecutter.package_name}}-36",
   "pypi_username": "jbasko",
   "package_url": "https://github.com/jbasko/{{cookiecutter.package_name}}"
 }
