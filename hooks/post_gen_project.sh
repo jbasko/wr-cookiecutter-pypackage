@@ -16,7 +16,7 @@ export PYENV_VERSION={{cookiecutter.venv_name}}
 pwd
 $(pyenv which pip) install -r ./requirements.txt
 
-tox
+tox -e py36
 
 export PYENV_VERSION=$original_pyenv
 
